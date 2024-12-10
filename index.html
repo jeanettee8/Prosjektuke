@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wishlist form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <h1>
+      MY WISHLIST
+      <br />
+    </h1>
+    <button type="button" class="collapsible" id="collapsible">
+      Why use this wishlist?
+    </button>
+    <div class="content">
+      <p id="collText">
+        This wishlist form is one of the best ones in the world. By selecting
+        your behavior, Santa will decide who is worthy of their wanted gifts.
+        While you fill out this form, we will monitor your pulse which means we
+        will know if you answer untruthfully. Remember Santa is all about
+        honesty, so don't try something fishy. This is why this is the most used
+        wishlist out there in the world, because only them worthy of gifts, get
+        them. 10/10 parents said they would recommend this form in our latest
+        survey made by our team in UntrustworthySurveys, so why not try it
+        yourself and why are you still reading this.
+      </p>
+    </div>
+    <br />
+  </head>
+  <body>
+    <form id="myForm">
+      <submit><p>What do you want for Christmas?</p></submit>
+      <textarea name="firstInput" style="width: 30%; height: 7rem"></textarea>
+      <br />
+      <button>Wish it!</button>
+      <p>What have you been this year?</p>
+      <p id="beHonest">(Be honest)</p>
+      <input type="radio" name="number1" value="Naughty" id="number1" />
+      <label for="number1">I've been naughty &#128528;</label><br />
+      <input type="radio" name="number1" value="Nice" id="number2" />
+      <label for="number2">I've been nice &#128527;</label><br />
+      <input type="radio" name="number1" value="Unsure" id="number3" />
+      <label for="number3">I'm not sure &#128533;</label><br />
+      <br />
+      <p>Why do you like Christmas?</p>
+      <input type="checkbox" name="number1" value="gifts" id="number1" />
+      <label for="number1">I get many gifts</label><br />
+      <input type="checkbox" name="number2" value="family" id="number2" />
+      <label for="number2">I love spending time with my family</label><br />
+      <input type="checkbox" name="number3" value="santa" id="number3" />
+      <label for="number3">Santa Claus is my only friend.</label><br />
+      <input type="checkbox" name="number4" value="snow" id="number4" />
+      <label for="number4">It snows!</label><br />
+      <input type="checkbox" name="number5" value="form" id="number5" />
+      <label for="number5">I get to fill out this amazing form</label><br />
+      <br />
+      <label for="gifts"><p>How many gifts do you want?</p></label>
+      <select name="gifts" id="gifts">
+        <option value="first">Select an option</option>
+        <option value="10">1-10</option>
+        <option value="20">10-20</option>
+        <option value="30">20+ (capitalism lover)</option></select
+      ><br /><br />
+      <label for="giftColor"
+        ><p>Select the color you want your gifts to be wrapped in:</p></label
+      >
+      <input type="color" id="giftColor" name="giftColor" />
+
+      <p>Would you recommend this form to others?</p>
+      <input type="button" id="button4" value="Yes" />
+      <input
+        type="button"
+        id="button5"
+        onclick="alert('Why would you say that to me...&#128557;')"
+        value="No"
+      />
+    </form>
+  </body>
+</html>
