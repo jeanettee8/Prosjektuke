@@ -35,11 +35,15 @@
     <br />
   </head>
   <body>
-    <form id="myForm">
+    <form
+      id="myForm"
+      action="/action_page.php"
+      onsubmit="return validateForm()"
+      method="post"
+    >
       <submit><p>What do you want for Christmas?</p></submit>
       <textarea name="firstInput" style="width: 30%; height: 7rem"></textarea>
       <br />
-      <button>Wish it!</button>
       <p>What have you been this year?</p>
       <p id="beHonest">(Be honest)</p>
       <input type="radio" name="number1" value="Naughty" id="number1" />
@@ -72,6 +76,7 @@
         ><p>Select the color you want your gifts to be wrapped in:</p></label
       >
       <input type="color" id="giftColor" name="giftColor" />
+      <br /><br /><button>Wish it!</button>
 
       <p>Would you recommend this form to others?</p>
       <input type="button" id="button4" value="Yes" />

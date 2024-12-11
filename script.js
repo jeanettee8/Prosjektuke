@@ -26,3 +26,11 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+function validateForm() {
+  let x = document.forms["myForm"]["firstInput"].value;
+  if (x == "") {
+    alert("Wishes must be filled out");
+    return false;
+  }
+}

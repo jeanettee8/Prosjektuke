@@ -45,6 +45,9 @@ h1 {
   color: black;
 }
 
+/* fix picure AFTER every edit = this should be 
+one of the last things you do = focus first on the form
+itself, and background styling after */
 form {
   background-color: rgba(243, 255, 243, 0.349);
   background-image: url("./toni-cuenca-CvFARq2qu8Y-unsplash.jpg");
