@@ -31,10 +31,10 @@ function validateForm() {
   let x = document.forms["myForm"]["firstInput"].value;
   let y = document.forms["myForm"]["fname"].value;
   if (x == "") {
-    alert("Wishes must be filled out");
+    alert("Please fill out your wishes");
     return false;
   } else if (y == "") {
-    alert("Fill out your name");
+    alert("Please fill out your name");
     return false;
   }
 }
