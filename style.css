@@ -6,6 +6,8 @@ body {
   margin: 0;
 }
 
+/* Snow background */
+
 .snow,
 .snow:before,
 snow:after {
@@ -362,6 +364,8 @@ snow:after {
   }
 }
 
+/* End of snow background */
+
 h1 {
   font-family: "Karla", sans-serif;
   letter-spacing: 0.2rem;
@@ -401,6 +405,8 @@ h1 {
   font-family: "Karla", sans-serif;
   color: black;
 }
+
+/* Snowglobe */
 
 .canvas {
   --size: 35vmin;
@@ -689,6 +695,83 @@ h1 {
     radial-gradient(circle at 50% 70%, #fff, #eee 40%, #0000 0);
   background-repeat: no-repeat;
 }
+/* End of snowglobe */
+
+/* Santa in a helicopter */
+.container {
+  height: 480px;
+  width: 350px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(240%, -45%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.plane {
+  position: relative;
+  -webkit-animation: float 3s infinite;
+  animation: float 3s infinite;
+}
+@-webkit-keyframes float {
+  50% {
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
+  }
+}
+@keyframes float {
+  50% {
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
+  }
+}
+.hand {
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+  -webkit-animation: wave 1.5s infinite;
+  animation: wave 1.5s infinite;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+.blade {
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+  -webkit-transform-origin: 50% 54%;
+  -ms-transform-origin: 50% 54%;
+  transform-origin: 50% 54%;
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+@-webkit-keyframes wave {
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+}
+@keyframes wave {
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+}
+/* End of santa in a helicopter */
 
 form {
   background-color: rgba(255, 243, 243, 0.349);
@@ -713,27 +796,20 @@ p {
   font-weight: 500;
 }
 
-submit {
+#fname {
   font-family: "Karla", sans-serif;
-  letter-spacing: 0.02rem;
+  border-radius: 5px;
 }
+
 /* 
 #firstInput {
   width: 1%;
   padding: 1rem 1rem;
 } */
 
-#firstInput:focus {
-  border: 0.05rem;
-}
-
-button {
-  width: 15%;
-  padding: 0.25rem 0.5rem;
-  background-color: rgb(235, 235, 235);
-  font-family: "Karla", sans-serif;
-  font-size: 100%;
-  letter-spacing: 0.02rem;
+textarea {
+  resize: none;
+  border-radius: 5px;
 }
 
 #beHonest {
@@ -753,6 +829,15 @@ label {
 
 #gifts {
   font-size: 110%;
+}
+
+button {
+  width: 15%;
+  padding: 0.25rem 0.5rem;
+  background-color: rgb(235, 235, 235);
+  font-family: "Karla", sans-serif;
+  font-size: 100%;
+  letter-spacing: 0.02rem;
 }
 
 #button4 {

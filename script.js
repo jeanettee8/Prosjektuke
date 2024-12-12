@@ -28,7 +28,7 @@ for (i = 0; i < coll.length; i++) {
 }
 
 function validateForm() {
-  let x = document.forms["myForm"]["firstInput"].value;
+  let x = document.forms["myForm"]["wishes"].value;
   let y = document.forms["myForm"]["fname"].value;
   if (x == "") {
     alert("Please fill out your wishes");
